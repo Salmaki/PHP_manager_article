@@ -1,0 +1,19 @@
+- PDO (PHP Data Objects):
+$pdo = new PDO(...)
+Création d’un objet PDO pour se connecter à MySQL
+donc on a des paramètres: $host c'est le serveur de la base de donnes
+et $dbname le nom de la base de donnees et $username le nom de l'utilisateur MySQL
+et $password mot de passe mysql
+
+
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION)
+Configure PDO pour lancer des exceptions si erreur SQL
+Meilleure façon pour gérer les erreurs.
+
+try { ... } catch (PDOException $e) { ... }
+try → on essaye de connecter
+catch → si erreur, on affiche un message lisible. 
+
+
+-Crée le fichier connexion.php et copie le code php et on teste dans le navigateur "http://localhost/php_manager_article/chapitre_1/connexion.php" 
+si tout est correct on afficher "Connexion réussie à la base blogdb"
