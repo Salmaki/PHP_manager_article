@@ -1,0 +1,15 @@
+dans cette code laligne 1 on a require_once '../chapitre_1/connexion.php';
+Ce fichier contient la connexion à la base de données avec PDO et require_once garantit que le fichier est inclus une seule fois.
+
+et apres on utilise try pour essayer d’exécuter le code si une erreur se produit elle sera capturée dans le catch.
+Execution de la requete $sql = "SELECT * FROM Utilisateur" 
+                        $stmt = $pdo->query($sql);
+on a : $pdo → l’objet PDO pour se connecter à la base , query() → exécute la requête SQL
+
+et $stmt → contient les résultats.
+
+pour récupération des résultats on a fetchAll() récupère toutes les lignes et PDO::FETCH_ASSOC fait que chaque ligne est un tableau associatif,
+donc on peut accéder aux données par le nom de la colonne .
+
+Gestion des erreurs catch capture les erreurs PDO
+$e->getMessage() affiche le message d’erreur si la requête échoue.
