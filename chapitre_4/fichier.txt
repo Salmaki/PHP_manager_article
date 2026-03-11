@@ -1,0 +1,5 @@
+Ce chapitre explique comment détecter et gérer les erreurs lors de la connexion
+1- Avec try/catch on peut capturer les erreurs et éviter que le programme s’arrête.
+2- $e->getMessage() retourne le message d’erreur.
+3- file_put_contents('erreur.log', ..., FILE_APPEND) enregistre le message d’erreur dans le fichier erreur.log.
+4- echo "erreur de base donnes"; affiche un message simple à l’utilisateur sans montrer le détail technique.
