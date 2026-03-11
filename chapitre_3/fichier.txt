@@ -1,0 +1,5 @@
+Ce chapitre explique comment manipuler les données d’une table MySQL avec PHP PDO.
+INSERT permet d’ajouter un nouvel enregistrement dans la table et UPDATE permet de modifier des données existantes,
+et DELETE permet de supprimer un enregistrement et pour la sécurité on utilise prepare() ,
+et execute() pour sécuriser les requêtes et éviter l’injection SQL ,
+et pour verifie on utulise le code php $stmt->rowCount(); pour permet de savoir combien de lignes modifiees ou supprimees.
