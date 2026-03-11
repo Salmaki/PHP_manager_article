@@ -1,0 +1,5 @@
+Insertion d’un utilisateur (commentée dans le code, possible avec prepare + execute ou bindParam).
+
+Récupération d’un utilisateur par id (SELECT * WHERE id = ?).
+
+Affichage du nom de l’utilisateur (echo $user_id["nom"]).
