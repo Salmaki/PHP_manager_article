@@ -1,0 +1,4 @@
+Pour sécuriser une application web, il faut toujours valider et nettoyer les données reçues de l’utilisateur. 
+On peut utiliser des fonctions comme trim(), htmlspecialchars() et filter_var() pour vérifier et nettoyer les entrées.
+Valider les données, utiliser des requêtes préparées, gérer les erreurs correctement 
+et limiter les droits de la base de données permet de rendre l’application plus sécurisée.
